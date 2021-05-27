@@ -21,6 +21,8 @@
         <a class='nav-link' href="{% url 'register' %}">Registration page</a>
         {% if user.is_authenticated %}
         <a class='nav-link' href="{% url 'user_logout' %}">LogOut</a>
+        <a class='nav-link' href="{% url 'profile' %}">Profile</a>
+        <a class='nav-link' href="{% url 'change_password' %}">change_password</a>
         
       {% else %}
       <a class='nav-link' href="{% url 'user_login' %}">LogIn page</a>
